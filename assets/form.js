@@ -1,0 +1,1 @@
+document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();var b="";this.querySelectorAll("input,textarea,select").forEach(function(x){b+=x.name+": "+x.value+"\n"});location.href="mailto:info@yourdomain.com?subject="+encodeURIComponent(document.title)+"&body="+encodeURIComponent(b);});
